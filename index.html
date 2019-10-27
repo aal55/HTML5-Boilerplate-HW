@@ -1,41 +1,44 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!doctype html> <!-- Tells the browser that this is an html document -->
+<html class="no-js" lang=""> <!-- Starts the html document, checks for Javascript support, and does not specify a spoken language -->
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head> <!-- Contains website metadata -->
+  <meta charset="utf-8"> <!-- Tells the browser what character set to draw from -->
+  <title></title> <!-- Displays a title for the browser tab -->
+  <meta name="description" content=""> <!-- Provides a blank website summary -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tells the browser how to scale the page -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="manifest" href="site.webmanifest"> <!-- Provides information about the website -->
+  <link rel="apple-touch-icon" href="icon.png"> <!-- Gives a web icon for Apple devices -->
+  <!-- Place favicon.ico in the root directory --> <!-- favicon is the web icon for other devices -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- Draws from a separate style sheet called normalize.css -->
+  <link rel="stylesheet" href="css/main.css"> <!-- Draws from another style sheet called main.css -->
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <meta name="theme-color" content="#fafafa"> <!-- Sets the theme color of the browser to a light gray -->
+</head> <!-- Closes the head tag-->
 
-<body>
+<body> <!-- Contains page content -->
+  
+  <!-- Conditional comment check to see if the user is using internet explorer and if so, tells the user to upgrade their browser -->
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <![endif]--> <!-- Ends internet explorer check -->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Add your site or application content here --> <!-- Tells the user to set up their actual content under here -->
+  <p>Hello world! This is HTML5 Boilerplate.</p> <!-- Makes a paragraph displaying the message between the tags to the actual page -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script> <!-- Links to an external script (modernizer in this case) -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> <!-- Links to jQuery, makes sure source was not altered, and does not send user-credentials --> 
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> <!-- Fallback for if jQuery fails to load -->
+  <script src="js/plugins.js"></script> <!-- Links to jQuery plugins -->
+  <script src="js/main.js"></script> <!-- Allows plugins to be used -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- Opens a Google Analytics script which tracks data about the user that visits -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date; 
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+  </script> <!-- Ends the google analytics script -->
+  <script src="https://www.google-analytics.com/analytics.js" async></script> <!-- Optimizes analytics for modern browser -->
+</body> <!-- Closes the body tag -->
 
-</html>
+</html> <!-- Closes the html tag -->
